@@ -39,7 +39,7 @@ export default function App(){
 
           {/* 프로필 정보 영역 */}
           <div className="profile-info">
-            <p className="artist-sub-title">Kim Chae Woon</p>
+            <p className="artist-sub-title">KIM CHAE WOON</p>
             <h2 className="artist-name">김채운</h2>
 
             <div className="info-details">
