@@ -74,7 +74,7 @@ a {
 
 /* 레이아웃 공통 섹션 */
 .section {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 100px 24px 60px;
 }
@@ -214,12 +214,12 @@ display: flex;
 /* 3. 갤러리 섹션 */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
 
 .gallery-item-placeholder {
-  aspect-ratio: 4 / 4;
+  aspect-ratio: 4 / 6;
   background-color: #222222;
   border-radius: 6px;
   display: flex;
@@ -233,7 +233,7 @@ display: flex;
 /* 4. 앨범 섹션 */
 .album-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
 
@@ -275,7 +275,7 @@ display: flex;
 /* 5. 비디오 섹션 */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
 
