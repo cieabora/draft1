@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import profileImg from './img/profile.jpg'
 
 export default function App(){
   return(
@@ -21,6 +22,7 @@ export default function App(){
         </div>
       </header>
 
+      {/* hero section */}
       <section id="home" className="hero-section">
         <div className="hero-overlay">
           <h1 className="artist-title-en">KIM CHAE WOON</h1>
@@ -28,29 +30,36 @@ export default function App(){
         </div>
       </section>
 
-      <section id="profile" className="section profile-section">
-        <div className="section-title">
-          <h2>PROFILE</h2>
-        </div>
+      <section id="profile" className="profile-section">
         <div className="profile-content">
-          <div className="profile-image-placeholder">
-            <span>Artist Photo</span>
+          {/* 프로필 이미지 영역 */}
+          <div className="profile-image-wrapper">
+            <img src={profileImg} alt="김채운" className="profile-image" />
           </div>
+
+          {/* 프로필 정보 영역 */}
           <div className="profile-info">
-            <h3>Kim Chae Woon</h3>
-            <h1 className="profile-name">김채운</h1>
-            <dl className="info-list">
-              <dt>출생</dt>
-              <dd>2005년 6월 6일</dd>
-              <dt>데뷔일</dt>
-              <dd>2024년 8월 8일</dd>
-              <dt>소속사</dt>
-              <dd>인하대학교</dd>
-            </dl>
+            <p className="artist-sub-title">Kim Chae Woon</p>
+            <h2 className="artist-name">김채운</h2>
+
+            <div className="info-details">
+              <p>출생 : 1995년 08월 21일</p>
+              <p>데뷔 : 2013년 07월 02일 싱글 앨범 (꿈)</p>
+            </div>
+
+            {/* 소셜 아이콘 영역 */}
+            <div className="social-links">
+              <a href="#instagram"><i className="icon-instagram"></i></a>
+              <a href="#youtube"><i className="icon-youtube"></i></a>
+              <a href="#tiktok"><i className="icon-tiktok"></i></a>
+              <a href="#x"><i className="icon-x"></i></a>
+              <a href="#cafe"><i className="icon-cafe"></i></a>
+            </div>
           </div>
         </div>
       </section>
 
+      {/* gallery section */}
       <section id="gallery" className="section gallery-section">
         <div className="section-title">
           <h2>GALLERY</h2>
@@ -64,6 +73,7 @@ export default function App(){
         </div>
       </section>
 
+      {/* album section */}
       <section id="album" className="section album-section">
         <div className="section-title">
           <h2>ALBUM</h2>
@@ -109,7 +119,7 @@ export default function App(){
         </div>
       </section>
 
-      //6. 영상 섹션
+      {/* video section */}
       <section id="video" className="section video-section">
         <div className="section-title">
           <h2>VIDEO</h2>
@@ -124,7 +134,7 @@ export default function App(){
         </div>
       </section>
 
-      //7. 하단 footer
+      {/* footer section */}
       <footer className="footer">
         <div className="footer-content">
           <div className="social-center">
