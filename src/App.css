@@ -7,7 +7,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #111111;
+  background-color: #87CEEB;
   color: #ffffff;
   line-height: 1.6;
 }
@@ -24,10 +24,9 @@ a {
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(5px);
   z-index: 1000;
-  border-bottom: 1px solid #222222;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 .header-inner {
@@ -54,7 +53,7 @@ a {
 
 .nav-menu a {
   font-size: 0.95rem;
-  color: #aaaaaa;
+  color: #ffffff;
   transition: color 0.2s ease;
 }
 
@@ -98,7 +97,7 @@ a {
 .hero-section {
   height: 80vh;
   min-height: 500px;
-  background-color: #1a1a1a;
+  background-color: #87CEEB;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,6 +120,11 @@ a {
 }
 
 /* 2. 프로필 섹션 */
+.profile-section {
+  background-color: #7ac8e7;
+  padding: 80px 24px;
+}
+
 .profile-content {
 display: flex;
   flex-direction: row;          /* 가로 배치 */
@@ -162,26 +166,28 @@ display: flex;
 .profile-info{
   flex: 1;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   padding-left: 60px;
 }
 
 .artist-sub-title {
   font-size: 0.8rem;
-  font-weight: 200;
+  font-weight: 400;
   margin-bottom: 8px;
   letter-spacing: 4px;
 }
 
 .artist-name {
   font-size: 3.2rem;
-  font-weight: 30;
+  font-weight: 400;
   margin-bottom: 32px;
   letter-spacing: 2px;
 }
 
 .info-details{
   font-size: 0.95rem;
-  font-weight: 300;
+  font-weight: 450;
   margin-bottom: 32px;
   line-height: 1.8;
   letter-spacing: 0.8px;
@@ -192,9 +198,13 @@ display: flex;
 }
 
 .social-links{
+  max-width: 30px;
+}
+
+.social-links-wrapper{
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 24px;
 }
 
 /* 화면 폭이 좁아졌을 때 (반응형 - 이미지 2번 형태) */
@@ -208,8 +218,13 @@ display: flex;
 
   .profile-image-wrapper {
     width: 100%;
-    max-width: 450px;           /* 모바일에서도 이미지가 너무 커지지 않도록 한계 설정 */
+    max-width: 550px;           /* 모바일에서도 이미지가 너무 커지지 않도록 한계 설정 */
     margin-bottom: 32px;        /* 사진과 아래 텍스트 사이의 여백 */
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
   }
 
   .profile-info {
@@ -245,7 +260,7 @@ display: flex;
 }
 
 .album-card {
-  background-color: #181818;
+  background-color: #f0f0f0;
   padding: 16px;
   border-radius: 8px;
   text-align: center;
@@ -253,18 +268,18 @@ display: flex;
 
 .album-cover-placeholder {
   aspect-ratio: 1 / 1;
-  background-color: #2a2a2a;
+  background-color: #222222;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
-  color: #666666;
+  color: #aaaaaa;
 }
 
 .album-badge {
   font-size: 0.75rem;
-  color: #888888;
+  color: #aaaaaa;
   margin-bottom: 4px;
 }
 
@@ -272,11 +287,12 @@ display: flex;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 4px;
+  color: #000000
 }
 
 .album-date {
   font-size: 0.8rem;
-  color: #666666;
+  color: #000000;
 }
 
 /* 5. 비디오 섹션 */

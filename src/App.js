@@ -1,6 +1,10 @@
 import React from 'react'
 import './App.css'
 import profileImg from './img/profile.jpg'
+import x_logo from './img/x-logo.png'
+import tiktok_logo from './img/tiktok-logo.png'
+import youtube_logo from './img/youtube-logo.png'
+import instagram_logo from './img/insta-logo.png'
 
 export default function App(){
   return(
@@ -25,8 +29,8 @@ export default function App(){
       {/* hero section */}
       <section id="home" className="hero-section">
         <div className="hero-overlay">
-          <h1 className="artist-title-en">KIM CHAE WOON</h1>
-          <p className="artist-title-kr">김 채 운</p>
+          <h1 className="artist-title-en">HWANG MIN WOO</h1>
+          <p className="artist-title-kr">황 민 우</p>
         </div>
       </section>
 
@@ -34,26 +38,26 @@ export default function App(){
         <div className="profile-content">
           {/* 프로필 이미지 영역 */}
           <div className="profile-image-wrapper">
-            <img src={profileImg} alt="김채운" className="profile-image" />
+            <img src={profileImg} alt="황민우" className="profile-image" />
           </div>
 
           {/* 프로필 정보 영역 */}
           <div className="profile-info">
-            <p className="artist-sub-title">KIM CHAE WOON</p>
-            <h2 className="artist-name">김채운</h2>
+            <p className="artist-sub-title">HWANG MIN WOO</p>
+            <h2 className="artist-name">황민우</h2>
 
             <div className="info-details">
-              <p>출생 : 1995년 08월 21일</p>
-              <p>데뷔 : 2013년 07월 02일 싱글 앨범 (꿈)</p>
+              <p>출생 : 2005년 5월 17일</p>
+              <p>데뷔 : 2013년 3월 13일 (Show + Time)</p>
             </div>
 
             {/* 소셜 아이콘 영역 */}
-            <div className="social-links">
-              <a href="#instagram"><i className="icon-instagram"></i></a>
-              <a href="#youtube"><i className="icon-youtube"></i></a>
-              <a href="#tiktok"><i className="icon-tiktok"></i></a>
-              <a href="#x"><i className="icon-x"></i></a>
-              <a href="#cafe"><i className="icon-cafe"></i></a>
+            <div className="social-links-wrapper">
+              <a href="#instagram"><img src={instagram_logo} alt="Instagram" className="social-links"></img></a>
+              <a href="#youtube"><img src={youtube_logo} alt="YouTube" className="social-links"></img></a>
+              <a href="#tiktok"><img src={tiktok_logo} alt="TikTok" className="social-links"></img></a>
+              <a href="#x"><img src={x_logo} alt="X" className="social-links"></img></a>
+              <a href="#cafe"><i className="social-links"></i></a>
             </div>
           </div>
         </div>
@@ -82,39 +86,68 @@ export default function App(){
           <div className="album-card">
             <div className="album-cover-placeholder">Cover</div>
             <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">어쩌구</h4>
-            <p className="album-data">2026.10.06</p>
+            <h4 className="album-name">Show + Time</h4>
+            <p className="album-date">2013.03.13</p>
           </div>
           <div className="album-card">
             <div className="album-cover-placeholder">Cover</div>
             <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">어쩌구</h4>
-            <p className="album-data">2026.10.06</p>
-          </div><div className="album-card">
+            <h4 className="album-name">아리아리랑</h4>
+            <p className="album-date">2014.04.21</p>
+          </div>
+          <div className="album-card">
             <div className="album-cover-placeholder">Cover</div>
             <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">어쩌구</h4>
-            <p className="album-data">2026.10.06</p>
-          </div><div className="album-card">
+            <h4 className="album-name">Hay Cho Toi</h4>
+            <p className="album-date">2015.12.04</p>
+          </div>
+          <div className="album-card">
             <div className="album-cover-placeholder">Cover</div>
             <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">어쩌구</h4>
-            <p className="album-data">2026.10.06</p>
-          </div><div className="album-card">
+            <h4 className="album-name">오키도키</h4>
+            <p className="album-date">2016.10.21</p>
+          </div>
+          <div className="album-card">
             <div className="album-cover-placeholder">Cover</div>
             <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">어쩌구</h4>
-            <p className="album-data">2026.10.06</p>
-          </div><div className="album-card">
+            <h4 className="album-name">카톡송 (#KTS)</h4>
+            <p className="album-date">2017.06.09</p>
+          </div>
+          <div className="album-card">
             <div className="album-cover-placeholder">Cover</div>
             <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">어쩌구</h4>
-            <p className="album-data">2026.10.06</p>
-          </div><div className="album-card">
+            <h4 className="album-name">영일만친구</h4>
+            <p className="album-date">2022.12.30</p>
+          </div>
+          <div className="album-card">
             <div className="album-cover-placeholder">Cover</div>
             <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">어쩌구</h4>
-            <p className="album-data">2026.10.06</p>
+            <h4 className="album-name">님의 등불</h4>
+            <p className="album-date">2023.06.03</p>
+          </div>
+          <div className="album-card">
+            <div className="album-cover-placeholder">Cover</div>
+            <div className="album-badge">정규 1집</div>
+            <h4 className="album-name">오빠(OPPA)</h4>
+            <p className="album-date">2023.06.27</p>
+          </div>
+          <div className="album-card">
+            <div className="album-cover-placeholder">Cover</div>
+            <div className="album-badge">정규 1집</div>
+            <h4 className="album-name">당신의 의미</h4>
+            <p className="album-date">2023.07.08</p>
+          </div>
+          <div className="album-card">
+            <div className="album-cover-placeholder">Cover</div>
+            <div className="album-badge">정규 1집</div>
+            <h4 className="album-name">황금꿩꿩</h4>
+            <p className="album-date">2023.11.15</p>
+          </div>
+          <div className="album-card">
+            <div className="album-cover-placeholder">Cover</div>
+            <div className="album-badge">정규 1집</div>
+            <h4 className="album-name">Vroom</h4>
+            <p className="album-date">2025.06.20</p>
           </div>
         </div>
       </section>
