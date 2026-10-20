@@ -39,6 +39,12 @@ a {
   padding: 0 24px;
 }
 
+.container{
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
 .logo a {
   font-weight: 700;
   font-size: 1.2rem;
@@ -73,7 +79,7 @@ a {
 
 /* 레이아웃 공통 섹션 */
 .section {
-  max-width: 1600px;
+  max-width: none;
   margin: 0 auto;
   padding: 100px 24px 60px;
 }
@@ -93,16 +99,36 @@ a {
   text-align: center;
 }
 
-/* 1. 히어로 섹션 */
 .hero-section {
-  height: 80vh;
-  min-height: 500px;
-  background-color: #87CEEB;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 70px;
+  width: 100%;
+  height: 110vh; /* 화면 높이의 80% 정도만 차지하게 설정 (또는 100vh) */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 비율 유지하며 영역 채우기 */
+  object-position: center 30%; /* ★ 핵심! 이미지의 상단/중앙 위치를 약간 아래로 낮춰 인물의 얼굴이 잘 보이게 합니다 */
+}
+
+/* 히어로 섹션 위에 그라데이션 레이어 추가 */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 위쪽과 아래쪽에 은은한 어두운 그림자를 깔아 텍스트를 돋보이게 만듭니다 */
+  background: linear-gradient(
+    to bottom, 
+    rgba(0, 0, 0, 0.4) 0%,   /* 상단 메뉴 글씨 잘 보이게 */
+    rgba(0, 0, 0, 0) 40%, 
+    rgba(0, 0, 0, 0.5) 100%  /* 하단 경계선 부드럽게 */
+  );
+  pointer-events: none; /* 클릭 이벤트 통과 */
 }
 
 .artist-title-en {
@@ -139,12 +165,20 @@ display: flex;
 
 .profile-image-wrapper {
   flex-shrink: 0; /* 이미지가 줄어들지 않도록 설정 */
-  width: 500px;
+  width: 600px;
   margin-top: 100px;
 }
 
-.profile-image{
+.profile-image-wrapper img {
   width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+.profile-image{
+  width: 150%;
   height: auto;
   width: 500px;
   display: block;
@@ -179,8 +213,8 @@ display: flex;
 }
 
 .artist-name {
-  font-size: 3.2rem;
-  font-weight: 400;
+  font-size: 3.6rem;
+  font-weight: 420;
   margin-bottom: 32px;
   letter-spacing: 2px;
 }
@@ -236,18 +270,23 @@ display: flex;
 /* 3. 갤러리 섹션 */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px 30px;
 }
 
 .gallery-item-placeholder {
   aspect-ratio: 4 / 6;
   background-color: #222222;
   border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #555555;
+  display: flex;
+}
+
+.gallery-item-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 
@@ -255,8 +294,8 @@ display: flex;
 /* 4. 앨범 섹션 */
 .album-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px 30px;
 }
 
 .album-card {
@@ -275,6 +314,13 @@ display: flex;
   justify-content: center;
   margin-bottom: 16px;
   color: #aaaaaa;
+}
+
+.album-cover-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .album-badge {

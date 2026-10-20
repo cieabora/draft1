@@ -5,6 +5,21 @@ import x_logo from './img/x-logo.png'
 import tiktok_logo from './img/tiktok-logo.png'
 import youtube_logo from './img/youtube-logo.png'
 import instagram_logo from './img/insta-logo.png'
+import gallery1 from './img/gallery1.JPG'
+import gallery2 from './img/gallery2.JPG'
+import gallery3 from './img/gallery3.JPG'
+import gallery4 from './img/gallery4.JPG'
+import gallery5 from './img/gallery5.JPG'
+import gallery6 from './img/gallery6.JPG'
+import album1 from './img/album1.jpeg'
+import album2 from './img/album2.jpeg'
+import album3 from './img/album3.jpeg'
+import album4 from './img/album4.jpeg'
+import album5 from './img/album5.jpeg'
+import album6 from './img/album6.jpeg'
+import album7 from './img/album7.jpeg'
+import album8 from './img/album8.jpeg'
+import mainimg from './img/mainimg.JPG'
 
 export default function App(){
   return(
@@ -29,8 +44,7 @@ export default function App(){
       {/* hero section */}
       <section id="home" className="hero-section">
         <div className="hero-overlay">
-          <h1 className="artist-title-en">HWANG MIN WOO</h1>
-          <p className="artist-title-kr">황 민 우</p>
+          <img src={mainimg} alt="황민우" className="hero-image" />
         </div>
       </section>
 
@@ -69,9 +83,9 @@ export default function App(){
           <h2>GALLERY</h2>
         </div>
         <div className="gallery-grid">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="gallery-item-placeholder">
-              <span>Gallery Image {item}</span>
+          {[gallery1, gallery2, gallery3, gallery4, gallery5, gallery6].map((img, index) => (
+            <div key={index} className="gallery-item-placeholder">
+              <img src={img} alt={`Gallery Image ${index + 1}`} />
             </div>
           ))}
         </div>
@@ -84,71 +98,69 @@ export default function App(){
         </div>
         <div className="album-grid">
           <div className="album-card">
-            <div className="album-cover-placeholder">Cover</div>
-            <div className="album-badge">정규 1집</div>
+            <div className="album-cover-placeholder">
+              <img src={album1} alt="Album 1" />
+            </div>
             <h4 className="album-name">Show + Time</h4>
             <p className="album-date">2013.03.13</p>
           </div>
+
           <div className="album-card">
-            <div className="album-cover-placeholder">Cover</div>
-            <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">아리아리랑</h4>
-            <p className="album-date">2014.04.21</p>
-          </div>
-          <div className="album-card">
-            <div className="album-cover-placeholder">Cover</div>
-            <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">Hay Cho Toi</h4>
-            <p className="album-date">2015.12.04</p>
-          </div>
-          <div className="album-card">
-            <div className="album-cover-placeholder">Cover</div>
-            <div className="album-badge">정규 1집</div>
+            <div className="album-cover-placeholder">
+              <img src={album2} alt="Album 2" />
+            </div>
             <h4 className="album-name">오키도키</h4>
             <p className="album-date">2016.10.21</p>
           </div>
+
           <div className="album-card">
-            <div className="album-cover-placeholder">Cover</div>
-            <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">카톡송 (#KTS)</h4>
-            <p className="album-date">2017.06.09</p>
-          </div>
-          <div className="album-card">
-            <div className="album-cover-placeholder">Cover</div>
-            <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">영일만친구</h4>
-            <p className="album-date">2022.12.30</p>
-          </div>
-          <div className="album-card">
-            <div className="album-cover-placeholder">Cover</div>
-            <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">님의 등불</h4>
-            <p className="album-date">2023.06.03</p>
-          </div>
-          <div className="album-card">
-            <div className="album-cover-placeholder">Cover</div>
-            <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">오빠(OPPA)</h4>
+            <div className="album-cover-placeholder">
+              <img src={album3} alt="Album 3" />
+            </div>
+            <h4 className="album-name">오빠 (OPPA)</h4>
             <p className="album-date">2023.06.27</p>
           </div>
+
           <div className="album-card">
-            <div className="album-cover-placeholder">Cover</div>
-            <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">당신의 의미</h4>
-            <p className="album-date">2023.07.08</p>
-          </div>
-          <div className="album-card">
-            <div className="album-cover-placeholder">Cover</div>
-            <div className="album-badge">정규 1집</div>
-            <h4 className="album-name">황금꿩꿩</h4>
-            <p className="album-date">2023.11.15</p>
-          </div>
-          <div className="album-card">
-            <div className="album-cover-placeholder">Cover</div>
-            <div className="album-badge">정규 1집</div>
+            <div className="album-cover-placeholder">
+              <img src={album4} alt="Album 4" />
+            </div>
             <h4 className="album-name">Vroom</h4>
             <p className="album-date">2025.06.20</p>
           </div>
+
+          <div className="album-card">
+            <div className="album-cover-placeholder">
+              <img src={album5} alt="Album 5" />
+            </div>
+            <h4 className="album-name">울아버지</h4>
+            <p className="album-date">2023.05.15</p>
+          </div>
+
+          <div className="album-card">
+            <div className="album-cover-placeholder">
+              <img src={album6} alt="Album 6" />
+            </div>
+            <h4 className="album-name">팔팔하게</h4>
+            <p className="album-date">2024.08.10</p>
+          </div>
+
+          <div className="album-card">
+            <div className="album-cover-placeholder">
+              <img src={album7} alt="Album 7" />
+            </div>
+            <h4 className="album-name">망나니</h4>
+            <p className="album-date">2025.03.01</p>
+          </div>
+
+          <div className="album-card">
+            <div className="album-cover-placeholder">
+              <img src={album8} alt="Album 8" />
+            </div>
+            <h4 className="album-name">가라지</h4>
+            <p className="album-date">2025.09.27</p>
+          </div>
+
         </div>
       </section>
 
