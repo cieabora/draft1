@@ -5,6 +5,7 @@ import x_logo from './img/x-logo.png'
 import tiktok_logo from './img/tiktok-logo.png'
 import youtube_logo from './img/youtube-logo.png'
 import instagram_logo from './img/insta-logo.png'
+import cafe_logo from './img/cafe-logo.png'
 import gallery1 from './img/gallery1.JPG'
 import gallery2 from './img/gallery2.JPG'
 import gallery3 from './img/gallery3.JPG'
@@ -20,6 +21,8 @@ import album6 from './img/album6.jpeg'
 import album7 from './img/album7.jpeg'
 import album8 from './img/album8.jpeg'
 import mainimg from './img/mainimg.JPG'
+import mwprofile from './img/mw_profile.JPG'
+import mhprofile from './img/mh_profile.JPG'
 
 export default function App(){
   return(
@@ -48,11 +51,11 @@ export default function App(){
         </div>
       </section>
 
-      <section id="profile" className="profile-section">
+      <section id="profile" className="profile-section bottom-gap-20">
         <div className="profile-content">
           {/* 프로필 이미지 영역 */}
           <div className="profile-image-wrapper">
-            <img src={profileImg} alt="황민우" className="profile-image" />
+            <img src={mwprofile} alt="황민우" className="profile-image" />
           </div>
 
           {/* 프로필 정보 영역 */}
@@ -61,8 +64,11 @@ export default function App(){
             <h2 className="artist-name">황민우</h2>
 
             <div className="info-details">
-              <p>출생 : 2005년 5월 17일</p>
-              <p>데뷔 : 2013년 3월 13일 (Show + Time)</p>
+              <p>별명: 리틀싸이</p>
+              <p>생년월일 : 2005년 5월 17일</p>
+              <p>출생 : 전라남도 광주광역시</p>
+              <p>거주지 : 경기도 용인시 처인구</p>
+              <p>데뷔 : 2013년 싱글 앨범 (Show + Time)</p>
             </div>
 
             {/* 소셜 아이콘 영역 */}
@@ -71,7 +77,36 @@ export default function App(){
               <a href="#youtube"><img src={youtube_logo} alt="YouTube" className="social-links"></img></a>
               <a href="#tiktok"><img src={tiktok_logo} alt="TikTok" className="social-links"></img></a>
               <a href="#x"><img src={x_logo} alt="X" className="social-links"></img></a>
-              <a href="#cafe"><i className="social-links"></i></a>
+              <a href="#cafe"><img src={cafe_logo} alt="Cafe" className="social-links"></img></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="profile" className="profile-section">
+        <div className="profile-content">
+          {/* 프로필 이미지 영역 */}
+          <div className="profile-image-wrapper">
+            <img src={mhprofile} alt="황민우" className="profile-image" />
+          </div>
+
+          {/* 프로필 정보 영역 */}
+          <div className="profile-info">
+            <p className="artist-sub-title">HWANG MIN WOO</p>
+            <h2 className="artist-name">황민호</h2>
+
+            <div className="info-details">
+              <p>별명: 감성거인</p>
+              <p>출생 : 2013년 10월 22일</p>
+            </div>
+
+            {/* 소셜 아이콘 영역 */}
+            <div className="social-links-wrapper">
+              <a href="#instagram"><img src={instagram_logo} alt="Instagram" className="social-links"></img></a>
+              <a href="#youtube"><img src={youtube_logo} alt="YouTube" className="social-links"></img></a>
+              <a href="#tiktok"><img src={tiktok_logo} alt="TikTok" className="social-links"></img></a>
+              <a href="#x"><img src={x_logo} alt="X" className="social-links"></img></a>
+              <a href="#cafe"><img src={cafe_logo} alt="Cafe" className="social-links"></img></a>
             </div>
           </div>
         </div>

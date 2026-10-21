@@ -106,6 +106,12 @@ a {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    height: 80vh; /* 모바일에서는 화면 높이의 80%로 조정 */
+  }
+}
+
 .hero-section img {
   width: 100%;
   height: 100%;
@@ -151,6 +157,10 @@ a {
   padding: 80px 24px;
 }
 
+.bottom-gap-20 {
+  padding-bottom: 0px !important;
+}
+
 .profile-content {
 display: flex;
   flex-direction: row;          /* 가로 배치 */
@@ -171,6 +181,8 @@ display: flex;
 
 .profile-image-wrapper img {
   width: 100%;
+  max-width: 600px;
+  aspect-ratio: 5 / 6; /* 정사각형 비율 유지 */
   height: auto;
   border-radius: 8px;
   object-fit: cover;
