@@ -73,11 +73,10 @@ export default function App(){
 
             {/* 소셜 아이콘 영역 */}
             <div className="social-links-wrapper">
-              <a href="#instagram"><img src={instagram_logo} alt="Instagram" className="social-links"></img></a>
-              <a href="#youtube"><img src={youtube_logo} alt="YouTube" className="social-links"></img></a>
-              <a href="#tiktok"><img src={tiktok_logo} alt="TikTok" className="social-links"></img></a>
-              <a href="#x"><img src={x_logo} alt="X" className="social-links"></img></a>
-              <a href="#cafe"><img src={cafe_logo} alt="Cafe" className="social-links"></img></a>
+              <a href="https://www.instagram.com/littlepsy_hmw"><img src={instagram_logo} alt="Instagram" className="social-links"></img></a>
+              <a href="https://www.youtube.com/channel/UCnmGrHvdV_CcVG4kvTm_0Eg"><img src={youtube_logo} alt="YouTube" className="social-links"></img></a>
+              <a href="https://www.tiktok.com/@minwoo0517"><img src={tiktok_logo} alt="TikTok" className="social-links"></img></a>
+              <a href="https://cafe.naver.com/trothoowoo"><img src={cafe_logo} alt="Cafe" className="social-links"></img></a>
             </div>
           </div>
         </div>
@@ -102,11 +101,8 @@ export default function App(){
 
             {/* 소셜 아이콘 영역 */}
             <div className="social-links-wrapper">
-              <a href="#instagram"><img src={instagram_logo} alt="Instagram" className="social-links"></img></a>
-              <a href="#youtube"><img src={youtube_logo} alt="YouTube" className="social-links"></img></a>
-              <a href="#tiktok"><img src={tiktok_logo} alt="TikTok" className="social-links"></img></a>
-              <a href="#x"><img src={x_logo} alt="X" className="social-links"></img></a>
-              <a href="#cafe"><img src={cafe_logo} alt="Cafe" className="social-links"></img></a>
+              <a href="https://www.instagram.com/real.hwangminho"><img src={instagram_logo} alt="Instagram" className="social-links"></img></a>
+              <a href="https://www.tiktok.com/@hwangminho2013"><img src={tiktok_logo} alt="TikTok" className="social-links"></img></a>
             </div>
           </div>
         </div>
