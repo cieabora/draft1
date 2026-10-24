@@ -7,7 +7,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #87CEEB;
+  background-color: #faef57;
   color: #ffffff;
   line-height: 1.6;
 }
@@ -153,7 +153,7 @@ a {
 
 /* 2. 프로필 섹션 */
 .profile-section {
-  background-color: #7ac8e7;
+  background-color: #faef57;
   padding: 80px 24px;
 }
 
@@ -167,10 +167,9 @@ display: flex;
   align-items: center;          /* 세로 기준 가운데 정렬 */
   justify-content: space-between; /* 양 끝으로 벌려서 간격을 둠 (또는 gap 지정) */
   max-width: 1000px;            /* 전체 최대 너비 제한 */
-  margin: 0 auto;
-  padding: 60px 40px;
-  gap: 80px;                     /* 이미지와 텍스트 사이의 간격 */
-  max-width: 1200px;                /* 전체 최대 너비 제한 */
+  padding: 30px 40px;
+  gap: 10px;                     /* 이미지와 텍스트 사이의 간격 */
+  max-width: 1800px;                /* 전체 최대 너비 제한 */
 }
 
 .profile-image-wrapper {
@@ -209,11 +208,31 @@ display: flex;
   color: #777777;
 }
 
-.profile-info{
+.profile-info-wrap{
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.profile-left{
+  flex: 0 0 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 300px;
+}
+
+.profile-right{
   flex: 1;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  border-left: 1px solid rgba(255, 255, 255);
+  padding-left: 40px;
+  height: auto;
+}
+
+.profile-info{
+  text-align: left;
+  justify-content: left;
+  align-items: left;
   padding-left: 60px;
 }
 
@@ -243,13 +262,24 @@ display: flex;
   margin-bottom: 10px;
 }
 
+.intro-text{
+  line-height: 1.6;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.right-detail{
+  padding-bottom: 10px;
+}
+
 .social-links{
   max-width: 30px;
 }
 
 .social-links-wrapper{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 24px;
 }
 
