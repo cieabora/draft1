@@ -108,7 +108,7 @@ a {
 
 @media (max-width: 768px) {
   .hero-section {
-    height: 80vh; /* 모바일에서는 화면 높이의 80%로 조정 */
+    height: auto; /* 모바일에서는 화면 높이의 80%로 조정 */
   }
 }
 
