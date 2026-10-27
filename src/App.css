@@ -375,7 +375,6 @@ a {
   .profile-info-wrap{
     flex-direction: column;
     align-items: center;
-    flex: 1;
   }
 
   .profile-detail-wrap{
@@ -390,7 +389,7 @@ a {
   }
 
   .profile-right{
-    flex: 1;
+    flex: 0 0 auto;
     border-left: none;          /* 모바일에서는 좌측 경계선 제거 */
     padding-left: 0;            /* 좌측 패딩 제거 */
     width: 100%;
