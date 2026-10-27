@@ -7,7 +7,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #87CEEB;
+  background-color: #f1c40f;
   color: #ffffff;
   line-height: 1.6;
 }
@@ -30,13 +30,11 @@ a {
 }
 
 .header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0 24px;
+  width: 100%;
 }
 
 .container{
@@ -49,6 +47,17 @@ a {
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 2px;
+}
+
+.logo img{
+  height: 80px;
+}
+
+.nav-menu {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-menu ul {
@@ -153,8 +162,9 @@ a {
 
 /* 2. 프로필 섹션 */
 .profile-section {
-  background-color: #7ac8e7;
   padding: 80px 24px;
+  justify-content: center;
+  width: 100%;
 }
 
 .bottom-gap-20 {
@@ -162,21 +172,20 @@ a {
 }
 
 .profile-content {
-display: flex;
+  width: 100%;
+  display: flex;
   flex-direction: row;          /* 가로 배치 */
-  align-items: center;          /* 세로 기준 가운데 정렬 */
-  justify-content: space-between; /* 양 끝으로 벌려서 간격을 둠 (또는 gap 지정) */
-  max-width: 1000px;            /* 전체 최대 너비 제한 */
+  align-items: center;      /* 세로 정렬: 위쪽 기준 */
+  justify-content: center; /* 양 끝으로 벌려서 간격을 둠 (또는 gap 지정) */
+  padding: 30px 40px;
+  gap: 10px;                     /* 이미지와 텍스트 사이의 간격 */
+  max-width: 1800px;                /* 전체 최대 너비 제한 */
   margin: 0 auto;
-  padding: 60px 40px;
-  gap: 80px;                     /* 이미지와 텍스트 사이의 간격 */
-  max-width: 1200px;                /* 전체 최대 너비 제한 */
 }
 
 .profile-image-wrapper {
   flex-shrink: 0; /* 이미지가 줄어들지 않도록 설정 */
   width: 600px;
-  margin-top: 100px;
 }
 
 .profile-image-wrapper img {
@@ -209,12 +218,86 @@ display: flex;
   color: #777777;
 }
 
-.profile-info{
+.profile-top-wrap{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.profile-info-wrap{
+  display: flex;
+  flex-direction: column;
   flex: 1;
-  text-align: center;
+  gap: 20px;
+  align-items: flex-start;
+  min-width: 700px;
+}
+
+.profile-detail-wrap{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.profile-left{
+  flex: 0 0 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.profile-right{
+  flex: 1;
+  border-left: 1px solid rgba(255, 255, 255);
+  padding-left: 40px;
+  height: auto;
+}
+
+.profile-info{
   padding-left: 60px;
+}
+
+.profile-bottom{
+  width: 100%;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.profile-bottom .section-header{
+  border-bottom: 2px solid #ffffff;
+  padding-left: 16px;
+  margin-bottom: 30px;
+}
+
+.profile-bottom .en-label{
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.profile-bottom .kr-label{
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.career-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.career-card img{
+  min-width: 200px;
+  border-radius: 4px;
 }
 
 .artist-sub-title {
@@ -222,6 +305,7 @@ display: flex;
   font-weight: 400;
   margin-bottom: 8px;
   letter-spacing: 4px;
+  color: #222222;
 }
 
 .artist-name {
@@ -229,6 +313,7 @@ display: flex;
   font-weight: 420;
   margin-bottom: 32px;
   letter-spacing: 2px;
+  color: #222222;
 }
 
 .info-details{
@@ -237,10 +322,24 @@ display: flex;
   margin-bottom: 32px;
   line-height: 1.8;
   letter-spacing: 0.8px;
+  color: #222222;
 }
 
 .info-details p {
   margin-bottom: 10px;
+}
+
+.intro-text{
+  line-height: 1.6;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 30px;
+  color: #000000;
+}
+
+.right-detail{
+  padding-bottom: 10px;
+  color: #000000;
 }
 
 .social-links{
