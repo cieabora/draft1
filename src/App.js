@@ -11,6 +11,8 @@ import gallery3 from './img/gallery3.JPG'
 import gallery4 from './img/gallery4.JPG'
 import gallery5 from './img/gallery5.JPG'
 import gallery6 from './img/gallery6.JPG'
+import gallery7 from './img/gallery7.jpg'
+import gallery8 from './img/gallery8.jpg'
 import album1 from './img/album1.jpeg'
 import album2 from './img/album2.jpeg'
 import album3 from './img/album3.jpeg'
@@ -47,6 +49,13 @@ export default function App(){
       <section id="home" className="hero-section">
         <div className="hero-overlay">
           <img src={mainimg} alt="황민우" className="hero-image" />
+        </div>
+
+        <div className="hero-contact">
+          <span className="contact-title">BUSINESS CONTACT</span>
+          <p>비즈니스·아티스트 섭외 문의</p>
+          <p>공연·방송·행사·광고·협업</p>
+          <p>T.010-7646-9430</p>
         </div>
       </section>
 
@@ -123,7 +132,9 @@ export default function App(){
                   {/* 소셜 아이콘 영역 */}
                   <div className="social-links-wrapper">
                     <a href="https://www.instagram.com/real.hwangminho"><img src={instagram_logo} alt="Instagram" className="social-links"></img></a>
+                    <a href="https://www.youtube.com/channel/UCnmGrHvdV_CcVG4kvTm_0Eg"><img src={youtube_logo} alt="YouTube" className="social-links"></img></a>
                     <a href="https://www.tiktok.com/@hwangminho2013"><img src={tiktok_logo} alt="TikTok" className="social-links"></img></a>
+                    <a href="https://cafe.naver.com/trothoowoo"><img src={cafe_logo} alt="Cafe" className="social-links"></img></a>
                   </div>
                 </div>
               </div>
@@ -135,7 +146,19 @@ export default function App(){
                   TV CHOSUN '미스터트롯2'에서 '감성 거인'이라는 수식어와 함께 뜨거운 화제를 모으며 높은 무대 영상 조회수를 기록했고, MBN '현역가왕2'에서는 본선 2차전 MVP에 선정되며 뛰어난 가창력과 무대 장악력을 다시 한번 입증했다. 특히 노래뿐만 아니라 화려한 장구 퍼포먼스까지 선보이며 자신만의 독보적인 음악적 색깔을 구축해 왔다.
                 </p>
                 <p class="right-detail">
-                  이후 KBS '불후의 명곡' 왕중왕전 우승을 비롯해 MBN '한일톱텐쇼', KBS '슈퍼맨이 돌아왔다', tvN '앙상블' 등 다양한 방송에서 활약하며 음악과 예능을 넘나드는 다재다능한 아티스트로 성장하고 있다.
+                  이후 KBS '불후의 명곡' 왕중왕전 우승을 비롯해 
+                </p>
+                <p class="right-detail">
+                  MBN '한일톱텐쇼', KBS '슈퍼맨이 돌아왔다', 
+                </p>
+                <p class="right-detail">
+                  tvN '앙상블' 등 
+                </p>
+                <p class="right-detail">
+                  다양한 방송에서 프로그램에 고정출연하며 음악과 예능을 넘나드는 
+                </p>
+                <p class="right-detail">
+                다재다능한 아티스트로 성장하고 있다.
                 </p>
                 <p class="right-detail">
                   또한 경기도 오산시와 전라남도 영광군 홍보대사로 활동하며 대중과의 소통을 이어가고 있으며, 2025년에는 형 황민우와 함께 단독 콘서트 '황금효선물'을 개최하며 방송을 넘어 공연 무대에서도 존재감을 넓혀가고 있다.
@@ -152,7 +175,7 @@ export default function App(){
           <h2>GALLERY</h2>
         </div>
         <div className="gallery-grid">
-          {[gallery1, gallery2, gallery3, gallery4, gallery5, gallery6].map((img, index) => (
+          {[gallery8, gallery1, gallery2, gallery3, gallery7, gallery4, gallery5, gallery6].map((img, index) => (
             <div key={index} className="gallery-item-placeholder">
               <img src={img} alt={`Gallery Image ${index + 1}`} />
             </div>
@@ -260,9 +283,10 @@ export default function App(){
               공식 유튜브
             </a>
           </div>
-          <p className="contact">Contact : T: 010-7646-9430</p>
-          <p className="contact">Contact : T: 010-2617-9430</p>
-          <p className="copyright">&copy;  OrPICK</p>
+          <p className="contact">올픽 엔터테인먼트</p>
+          <p className="contact">대표 부티리</p>
+          <p className="contact">등록번호 753-08-03373</p>
+          <p className="copyright">&copy;  OrPICK ENTERTAINMENT</p>
         </div>
       </footer>
     </div>
