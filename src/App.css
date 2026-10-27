@@ -353,7 +353,7 @@ a {
 }
 
 /* 화면 폭이 좁아졌을 때 (반응형 - 이미지 2번 형태) */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .profile-content {
     flex-direction: column;     /* 세로 배치로 변경 */
     align-items: center;        /* 위아래 요소 전체 가운데 정렬 */
