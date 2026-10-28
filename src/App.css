@@ -53,6 +53,12 @@ a {
   height: 60px;
 }
 
+@media (max-width: 768px) {
+  .logo img{
+    height: 30px;
+  }
+}
+
 .nav-menu {
   margin: 0 auto;
   display: flex;
@@ -119,6 +125,7 @@ a {
   .hero-section {
     width: 100%;
     height: auto; /* 모바일에서는 화면 높이의 80%로 조정 */
+    margin-top: 70px;
   }
 }
 
