@@ -168,7 +168,7 @@ a {
   right: 50px;    /* 오른쪽에서 50px 안쪽으로 */
   text-align: right; /* 글씨 텍스트 우측 정렬 */
   z-index: 10;       /* 그라데이션 레이어보다 위에 오도록 설정 */
-  background-color: rgba(255, 255, 255, 0.5); /* 반투명 배경 */
+  background-color: rgba(255, 255, 255, 0.7); /* 반투명 배경 */
   border-radius: 8px;
 }
 
@@ -196,11 +196,11 @@ a {
   }
 
   .hero-contact .contact-title {
-    font-size: 0.45rem;
+    font-size: 0.4rem;
   }
 
   .hero-contact p {
-    font-size: 0.45rem;
+    font-size: 0.4rem;
   }
 }
 
