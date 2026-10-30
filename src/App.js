@@ -54,8 +54,8 @@ export default function App(){
         <div className="hero-contact">
           <span className="contact-title">BUSINESS CONTACT</span>
           <p>비즈니스·아티스트 섭외 문의</p>
-          <p>공연·방송·행사·광고·협업</p>
-          <p>T.010-7646-9430</p>
+          <p>실장: 010-7646-9430</p>
+          <p>팀장: 010-4413-8456</p>
         </div>
       </section>
 

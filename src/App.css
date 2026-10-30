@@ -193,14 +193,14 @@ a {
   .hero-contact {
     bottom: 20px;
     right: 20px;
-    left: 20px;
     text-align: center;
     width: auto;
   }
 
   .hero-contact .contact-title {
     font-size: 0.45rem;
-    letter-spacing: 0.7px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .hero-contact p {
