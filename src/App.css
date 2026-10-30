@@ -196,11 +196,12 @@ a {
   }
 
   .hero-contact .contact-title {
-    font-size: 0.4rem;
+    font-size: 0.3rem;
+    letter-spacing: 0;
   }
 
   .hero-contact p {
-    font-size: 0.4rem;
+    font-size: 0.3rem;
   }
 }
 
